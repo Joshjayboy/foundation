@@ -6,7 +6,7 @@ const IText = () => {
     <>
       <Box
         sx={{
-          mt: 4,
+          // mt: 4,
           //   mt: -9,
           position: "relative",
           mb: { xs: 13, md: 25 },
@@ -33,7 +33,7 @@ const IText = () => {
             lineHeight: "55px",
             mb: { xs: 3, md: 24 },
             // mb: 24,
-            // display: { xs: "block" },
+            display: { xs: "none", md: "block" },
           }}
         >
           <img src={found} alt="found" />

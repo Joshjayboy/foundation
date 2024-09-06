@@ -9,12 +9,12 @@ import IText from "../Components/IText";
 const Home = () => {
   return (
     <>
-      <AppBar />
       <Box
         sx={{
           backgroundColor: "#E9E5DC",
         }}
       >
+        <AppBar />
         <IText />
         <Middle />
         <Mix />

@@ -43,6 +43,7 @@ const NavBar = () => {
       sx={{
         backgroundColor: "transparent",
         boxShadow: "none",
+        mb: 5,
       }}
     >
       <Container maxWidth="xl">
@@ -87,16 +88,25 @@ const NavBar = () => {
               {pages.map((page) => (
                 <MenuItem
                   key={page}
-                  onClick={handleCloseNavMenu}
-                  // onClick={() => {
-                  //   // handleCloseNavMenu();
-                  //   if (page === "About Us") {
-                  //     navigate("/about");
-                  //   }
-                  //   if (page === "More") {
-                  //     navigate("/");
-                  //   }
-                  // }}
+                  // onClick={handleCloseNavMenu}
+                  onClick={() => {
+                    // handleCloseNavMenu();
+                    if (page === "Home") {
+                      navigate("/");
+                    }
+                    if (page === "About Us") {
+                      navigate("/about");
+                    }
+                    if (page === "Gallery") {
+                      navigate("/gallery");
+                    }
+                    if (page === "Get Help") {
+                      navigate("/help");
+                    }
+                    if (page === "Contact Us") {
+                      navigate("/contact");
+                    }
+                  }}
                 >
                   {/* <MenuItem key={page} onClick={handleCloseNavMenu}> */}
                   <Typography sx={{ textAlign: "center" }}>{page}</Typography>
